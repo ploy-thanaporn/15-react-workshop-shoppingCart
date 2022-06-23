@@ -9,14 +9,14 @@ const CartData = [
   {
     id: 2,
     name: "Keshi",
-    image_url: "https://biggo.co.th/s/cd+keshi/",
+    image_url: "https://cf.shopee.co.th/file/941d91a2d5623b12e522bd77f51d1334",
     price: 2600,
     quantity: 1,
   },
   {
     id: 3,
     name: "Taylor Swift (RED)",
-    image_url: "https://i.ebayimg.com/images/g/-dkAAOSwN5phoDB1/s-l1600.jpg",
+    image_url: "https://i.ebayimg.com/images/g/4EkAAOSwNbNhoX--/s-l500.jpg",
     price: 2800,
     quantity: 1,
   },
