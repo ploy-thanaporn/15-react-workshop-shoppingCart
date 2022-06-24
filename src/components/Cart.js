@@ -1,17 +1,28 @@
 import React from "react";
+import { MyCartContext } from "../management/context";
 import CartItem from "./CartItem";
-import CartData from "../data/CartData";
 
 const Cart = () => {
-  return (
-    <div className="shopping-cart">
-      <div className="title">Product</div>
-      {CartData.map((item) => {
-        return <CartItem key={item.id} {...item} />;
-      })}
-      <div className="footer">Total: 5 THB</div>
-    </div>
-  );
+  const { cart, total } = MyCartContext();
+
+  if (cart.length === 0) {
+    // No Product in cart
+    return (
+      <div className="shopping-cart">
+        <div className="empty">No Product in shopping cart</div>
+      </div>
+    );
+  } else {
+    return (
+      <div className="shopping-cart">
+        <div className="title">Product</div>
+        {cart.map((item) => {
+          return <CartItem key={item.id} {...item} />;
+        })}
+        <div className="footer">Total: {total.toLocaleString()} THB</div>
+      </div>
+    );
+  }
 };
 
 export default Cart;
