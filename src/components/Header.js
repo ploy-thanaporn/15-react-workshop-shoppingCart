@@ -4,7 +4,7 @@ import HeaderCart from "./HeaderCart";
 const Header = () => {
   return (
     <header className="header">
-      <h1>Destiny-Shop.com</h1>
+      <h1>DESTINY-SHOP.COM</h1>
       <HeaderCart />
     </header>
   );
